@@ -942,7 +942,7 @@ img {
   resize: none;
 }
 
-.modal-input{
+.modal-input {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -955,11 +955,11 @@ img {
 }
 
 .modal-input:hover + .modal-svg,
-.modal-input:focus + .modal-svg{
+.modal-input:focus + .modal-svg {
   fill: var(--blue);
 }
 
-.modal-svg{
+.modal-svg {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -986,7 +986,7 @@ img {
   margin-right: 8px;
   border: 2px solid #000000;
   transition-property: background-color;
-  transition-duration: 2150ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -996,6 +996,10 @@ img {
   border: none;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.subscription-icon{
+  fill: #ffffff;
 }
 
 .check-text-span {
