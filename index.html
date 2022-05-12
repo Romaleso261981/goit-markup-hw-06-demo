@@ -485,14 +485,16 @@
                   placeholder="E-mail  "
                 />
               </div>
-              <button type="button" type="submit" class="subscription-button">
-                Подписаться
-              </button>
-              <svg class="subscription-icon" width="24" height="24">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-icon-send"
-                ></use>
-              </svg>
+              <div class=".subscription-button-wrap">
+                <button type="button" type="submit" class="subscription-button">
+                  <svg class="subscription-icon" width="24" height="24">
+                    <use
+                      href="./images/icons.svg/symbol-defs.svg#icon-icon-send"
+                    ></use>
+                  </svg>
+                  Подписаться
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -564,7 +566,7 @@
             <input
               type="checkbox"
               name="policy"
-              class="input-check"
+              class="input-check visually-hidden"
               id="input-check"
               value="policy"
             />
@@ -572,6 +574,7 @@
               >Соглашаюсь с рассылкой и принимаю
               <span class="check-text-span">Условия договора</span></label
             >
+            <!-- <span class="check-text-span"></span> -->
           </div>
           <button type="button" class="modal-button" type="submit">
             Отправить
