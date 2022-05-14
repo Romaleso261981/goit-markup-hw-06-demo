@@ -589,7 +589,6 @@ img {
   margin-left: 93px;
 }
 
-
 .subscription-form-wrap {
   display: flex;
   justify-content: space-between;
@@ -614,11 +613,11 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 14px;
-  color: #ffffff;
+  color: var(--white-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .subscription-button {
@@ -855,7 +854,7 @@ img {
   background: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition-property: background-color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -863,7 +862,7 @@ img {
 .modal-close-button:focus,
 .modal-close-button:hover {
   fill: var(--blue);
-  background-color: var(--white-color);
+  outline: none;
 }
 
 .modal-title {
@@ -913,6 +912,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background: var(--blue);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -943,6 +943,13 @@ img {
   resize: none;
 }
 
+.user-text:hover,
+.user-text:focus{
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  outline: none;
+}
+
 .modal-input {
   transition-property: border-color;
   transition-duration: 250ms;
@@ -953,6 +960,7 @@ img {
 .modal-input:hover {
   border: 1px solid var(--blue);
   border-radius: 4px;
+  outline: none;
 }
 
 .modal-input:hover + .modal-svg,
@@ -986,7 +994,7 @@ img {
   height: 15px;
   margin-right: 8px;
   border: 2px solid #000000;
-  transition-property: background-color;
+    transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -995,6 +1003,7 @@ img {
   background-color: var(--blue);
   background-image: url(../images/svg/check.svg);
   border: none;
+  border-radius: 2px;
   background-repeat: no-repeat;
   background-position: center;
 }
